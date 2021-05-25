@@ -1,0 +1,72 @@
+:root{
+   --light-purple:rgb(180, 57, 153);
+   --white:#fff;
+   --grey:#ccc;
+   --blue:rgb(12, 125, 218);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+body{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    background-color: var(--grey);
+}
+.container{
+   max-width: 600px;
+   width: 100%;
+   background: var(--white);
+   padding: 25px 30px;
+   border-radius: 5px;
+   line-height: 1cm;
+}
+.container .title{
+    font-size: 25px;
+    font-weight: 500;
+    position: relative;
+    text-align: center;
+    font: bold;
+}
+.container form .userdetails{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+form .userdetails .inputbox{
+margin: 20px 0 12px 0;
+}
+.userdetails .inputbox .details{
+    display: block;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+.userdetails .inputbox input{
+    height: 35px;
+    width: 100%;
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid var(--grey);
+    padding-left: 15px;
+    font-size: 16px;
+}
+form .btn{
+    height: 45px;
+    margin: 45px 0;
+}
+form .btn input{
+    height: 100%;
+    width: 100%;
+    outline: none;
+    font-size: 16px;
+    letter-spacing: 1px;
+    font-weight: 500;
+    color: var(--white);
+    background:var(--blue) ;
+    border-radius: 7px;
+}
